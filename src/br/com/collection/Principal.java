@@ -4,13 +4,20 @@ import javax.print.DocFlavor;
 import java.util.*;
 
 public class Principal {
+    /**
+     *
+     * @param args metodo principal
+     */
     public static void main(String[] args) {
+        /**
+         * metodos classe principal
+         */
         lerRegistroDePessoas();
         LerRegistroPorGrupo();
     }
 
     /**
-     * nomes de 
+     * nomes do registro das pessoas
      */
     private static void lerRegistroDePessoas() {
         Pessoa pessoas = new Pessoa();
@@ -30,12 +37,18 @@ public class Principal {
                 lista.add(pessoa3);
                 lista.add(pessoa4);
         }
-             String nomesPessoa = ",";
+        /**
+         * função split com nomes separados por virgulas
+         */
+        String nomesPessoa = ",";
                 String[] nomes = nomesPessoa.split(";");
         System.out.println(" Nomes separados por virgulas em ordem alfabetica");
         System.out.printf("{" + lista + nomes[0] + "}" + "\n");
     }
 
+    /**
+     * Tarefa 2 continuação
+     */
     private static void LerRegistroPorGrupo() {
         System.out.println("Continuação Tarefa 2");
         Pessoa2 ps = new Pessoa2();
@@ -59,12 +72,19 @@ public class Principal {
             lista.add(c);
             lista.add(d);
             }
+
+        /**
+         * função split que separa os nomes por virgula
+         */
+
           String nomePessoaSexo = ",";
           String[] nomes = nomePessoaSexo.split(" ; ");
         System.out.println("Lista de Pessoas e Sexo");
         System.out.printf(" " + lista + nomes[0] + "\n");
-
-          String sexo = " m ; f ";
+        /**
+         * função split separnado por genero de sexo
+         */
+        String sexo = " m ; f ";
           String[] sexos = sexo.split(" ; ");
             System.out.println("******************* Gupo Masculino ********************");
             for (Pessoa2 people: lista) {

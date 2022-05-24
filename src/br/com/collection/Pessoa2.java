@@ -1,6 +1,15 @@
 package br.com.collection;
 
+/**
+ * @author Allan borges
+ * classe pessoa
+ * criada para armazenar o nome e sexo das pessoas
+ * em variavel String
+ */
 public class Pessoa2 implements Comparable<Pessoa2>{
+    /**
+     * propriedades da classe
+     */
     private String nome;
     private String sexo;
 
@@ -29,6 +38,11 @@ public class Pessoa2 implements Comparable<Pessoa2>{
         this.sexo = sexo;
     }
 
+    /**
+     *
+     * retorna a lista de strings
+     * das propriedades
+     */
     @Override
     public String toString() {
         return "{" + nome  + "-" + sexo + '}';
